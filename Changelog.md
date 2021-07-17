@@ -1,5 +1,13 @@
 OpenCore Changelog
 ==================
+#### v0.7.2
+- Fixed OSBundleLibraries/OSBundleLibaries64 handling
+- Added `GraphicsInputMirroring` to fix lost keystrokes in some non-Apple graphical UEFI apps
+- Added support for stack canaries (security cookies / stack guards)
+- Fixed unintialised memory access in AudioDxe causing audio playback failure
+- Changed `Default` Apple Secure Boot model to `x86legacy` for better security and compatibility
+- Increased default APFS `MinDate` and `MinVersion` to macOS Big Sur for better security
+
 #### v0.7.1
 - Added `SyncTableIds` quirk to sync modified table OEM identifiers
 - Added CPU Info (MSRs) dumping to `SysReport`
